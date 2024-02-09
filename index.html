@@ -1,0 +1,1715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <style>/*!
+        <!-- * Start Bootstrap - Agency Bootstrap Theme (https://startbootstrap.com)
+        * Code licensed under the Apache License v2.0.
+        * For details, see http://www.apache.org/licenses/LICENSE-2.0.
+        */ 
+       
+       body {
+           overflow-x: hidden;
+           font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+       }
+       
+       .text-muted {
+           color: #777;
+       }
+       
+       .text-primary {
+           color: #1ee2e7;
+       }
+       
+       p {
+           font-size: 14px;
+           line-height: 1.75;
+       }
+       
+       p.large {
+           font-size: 16px;
+       }
+       
+       a,
+       a:hover,
+       a:focus,
+       a:active,
+       a.active {
+           outline: 0;
+       }
+       
+       a {
+           color: #1ee2e7;
+       }
+       
+       a:hover,
+       a:focus,
+       a:active,
+       a.active {
+           color: #17d0d5;
+       }
+       
+       h1,
+       h2,
+       h3,
+       h4,
+       h5,
+       h6 {
+           text-transform: uppercase;
+           font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+           font-weight: 700;
+       }
+       
+       .img-centered {
+           margin: 0 auto;
+       }
+       
+       .bg-light-gray {
+           background-color: #f7f7f7;
+       }
+       
+       .bg-darkest-gray {
+           background-color: #222;
+       }
+       
+       .btn-primary {
+           border-color: #1ee2e7;
+           text-transform: uppercase;
+           font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+           font-weight: 700;
+           color: #fff;
+           background-color: #1ee2e7;
+       }
+       
+       .btn-primary:hover,
+       .btn-primary:focus,
+       .btn-primary:active,
+       .btn-primary.active,
+       .open .dropdown-toggle.btn-primary {
+           border-color: #17d0d5;
+           color: #fff;
+           background-color: #17d0d5;
+       }
+       
+       .btn-primary:active,
+       .btn-primary.active,
+       .open .dropdown-toggle.btn-primary {
+           background-image: none;
+       }
+       
+       .btn-primary.disabled,
+       .btn-primary[disabled],
+       fieldset[disabled] .btn-primary,
+       .btn-primary.disabled:hover,
+       .btn-primary[disabled]:hover,
+       fieldset[disabled] .btn-primary:hover,
+       .btn-primary.disabled:focus,
+       .btn-primary[disabled]:focus,
+       fieldset[disabled] .btn-primary:focus,
+       .btn-primary.disabled:active,
+       .btn-primary[disabled]:active,
+       fieldset[disabled] .btn-primary:active,
+       .btn-primary.disabled.active,
+       .btn-primary[disabled].active,
+       fieldset[disabled] .btn-primary.active {
+           border-color: #1ee2e7;
+           background-color: #1ee2e7;
+       }
+       
+       .btn-primary .badge {
+           color: #1ee2e7;
+           background-color: #fff;
+       }
+       
+       .btn-xl {
+           padding: 20px 40px;
+           border-color: #1ee2e7;
+           border-radius: 3px;
+           text-transform: uppercase;
+           font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+           font-size: 18px;
+           font-weight: 700;
+           color: #fff;
+           background-color: #1ee2e7;
+       }
+       
+       .btn-xl:hover,
+       .btn-xl:focus,
+       .btn-xl:active,
+       .btn-xl.active,
+       .open .dropdown-toggle.btn-xl {
+           border-color: #17d0d5;
+           color: #fff;
+           background-color: #17d0d5;
+       }
+       
+       .btn-xl:active,
+       .btn-xl.active,
+       .open .dropdown-toggle.btn-xl {
+           background-image: none;
+       }
+       
+       .btn-xl.disabled,
+       .btn-xl[disabled],
+       fieldset[disabled] .btn-xl,
+       .btn-xl.disabled:hover,
+       .btn-xl[disabled]:hover,
+       fieldset[disabled] .btn-xl:hover,
+       .btn-xl.disabled:focus,
+       .btn-xl[disabled]:focus,
+       fieldset[disabled] .btn-xl:focus,
+       .btn-xl.disabled:active,
+       .btn-xl[disabled]:active,
+       fieldset[disabled] .btn-xl:active,
+       .btn-xl.disabled.active,
+       .btn-xl[disabled].active,
+       fieldset[disabled] .btn-xl.active {
+           border-color: #1ee2e7;
+           background-color: #1ee2e7;
+       }
+       
+       .btn-xl .badge {
+           color: #fed136;
+           background-color: #fff;
+       }
+       
+       .navbar-default {
+           border-color: transparent;
+           background-color: #222;
+       }
+       
+       .navbar-default .navbar-brand {
+           font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
+           color: #1ee2e7;
+       }
+       
+       .navbar-default .navbar-brand:hover,
+       .navbar-default .navbar-brand:focus,
+       .navbar-default .navbar-brand:active,
+       .navbar-default .navbar-brand.active {
+           color: #fec503;
+       }
+       
+       .navbar-default .navbar-collapse {
+           border-color: rgba(255,255,255,.02);
+       }
+       
+       .navbar-default .navbar-toggle {
+           border-color: #1ee2e7;
+           background-color: #1ee2e7;
+       }
+       
+       .navbar-default .navbar-toggle .icon-bar {
+           background-color: #fff;
+       }
+       
+       .navbar-default .navbar-toggle:hover,
+       .navbar-default .navbar-toggle:focus {
+           background-color: #1ee2e7;
+       }
+       
+       .navbar-default .nav li a {
+           text-transform: uppercase;
+           font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+           font-weight: 400;
+           letter-spacing: 1px;
+           color: #fff;
+       }
+       
+       .navbar-default .nav li a:hover,
+       .navbar-default .nav li a:focus {
+           outline: 0;
+           color: #1ee2e7;
+       }
+       
+       .navbar-default .navbar-nav>.active>a {
+           border-radius: 0;
+           color: #fff;
+           background-color: #1ee2e7;
+       }
+       
+       .navbar-default .navbar-nav>.active>a:hover,
+       .navbar-default .navbar-nav>.active>a:focus {
+           color: #fff;
+           background-color: #17d0d5;
+       }
+       
+       @media(min-width:768px) {
+           .navbar-default {
+               padding: 25px 0;
+               border: 0;
+               background-color: transparent;
+               -webkit-transition: padding .3s;
+               -moz-transition: padding .3s;
+               transition: padding .3s;
+           }
+       
+           .navbar-default .navbar-brand {
+               font-size: 2em;
+               -webkit-transition: all .3s;
+               -moz-transition: all .3s;
+               transition: all .3s;
+           }
+       
+           .navbar-default .navbar-nav>.active>a {
+               border-radius: 3px;
+           }
+       
+           .navbar-default.navbar-shrink {
+               padding: 10px 0;
+               background-color: #222;
+           }
+       
+           .navbar-default.navbar-shrink .navbar-brand {
+               font-size: 1.5em;
+           }
+       }
+       
+       header {
+           text-align: center;
+           color: #fff;
+           background-attachment: scroll;
+           background-image: url(https://unsplash.imgix.net/uploads%2F14115408840644deb16b0%2F2dc933e3?q=75&fm=jpg&auto=format&s=7f43646e4d26049c6c39890afb2e5ced);
+           background-position: center center;
+           background-repeat: none;
+           -webkit-background-size: cover;
+           -moz-background-size: cover;
+           background-size: cover;
+           -o-background-size: cover;
+       }
+       
+       header .intro-text {
+           padding-top: 100px;
+           padding-bottom: 50px;
+       }
+       
+       header .intro-text .intro-lead-in {
+           margin-bottom: 25px;
+           font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+           font-size: 22px;
+           font-style: italic;
+           line-height: 22px;
+       }
+       
+       header .intro-text .intro-heading {
+           margin-bottom: 25px;
+           text-transform: uppercase;
+           font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+           font-size: 50px;
+           font-weight: 700;
+           line-height: 50px;
+       }
+       
+       @media(min-width:768px) {
+           header .intro-text {
+               padding-top: 300px;
+               padding-bottom: 200px;
+           }
+       
+           header .intro-text .intro-lead-in {
+               margin-bottom: 25px;
+               font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+               font-size: 40px;
+               font-style: italic;
+               line-height: 40px;
+           }
+       
+           header .intro-text .intro-heading {
+               margin-bottom: 50px;
+               text-transform: uppercase;
+               font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+               font-size: 75px;
+               font-weight: 700;
+               line-height: 75px;
+           }
+       }
+       
+       section {
+           padding: 100px 0;
+       }
+       
+       section h2.section-heading {
+           margin-top: 0;
+           margin-bottom: 15px;
+           font-size: 40px;
+       }
+       
+       section h3.section-subheading {
+           margin-bottom: 75px;
+           text-transform: none;
+           font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+           font-size: 16px;
+           font-style: italic;
+           font-weight: 400;
+       }
+       
+       @media(min-width:768px) {
+           section {
+               padding: 150px 0;
+           }
+       }
+       
+       .service-heading {
+           margin: 15px 0;
+           text-transform: none;
+       }
+       
+       #portfolio .portfolio-item {
+           right: 0;
+           margin: 0 0 15px;
+       }
+       
+       #portfolio .portfolio-item .portfolio-link {
+           display: block;
+           position: relative;
+           margin: 0 auto;
+           max-width: 400px;
+       }
+       
+       #portfolio .portfolio-item .portfolio-link .portfolio-hover {
+           position: absolute;
+           width: 100%;
+           height: 100%;
+           opacity: 0;
+           background: #1ee2e7;
+           -webkit-transition: all ease .5s;
+           -moz-transition: all ease .5s;
+           transition: all ease .5s;
+       }
+       
+       #portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
+           opacity: 1;
+       }
+       
+       #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
+           position: absolute;
+           top: 50%;
+           width: 100%;
+           height: 20px;
+           margin-top: -12px;
+           text-align: center;
+           font-size: 20px;
+           color: #fff;
+       }
+       
+       #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content i {
+           margin-top: -12px;
+       }
+       
+       #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h3,
+       #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content h4 {
+           margin: 0;
+       }
+       
+       #portfolio .portfolio-item .portfolio-caption {
+           margin: 0 auto;
+           padding: 25px;
+           max-width: 400px;
+           text-align: center;
+           background-color: #fff;
+       }
+       
+       #portfolio .portfolio-item .portfolio-caption h4 {
+           margin: 0;
+           text-transform: none;
+       }
+       
+       #portfolio .portfolio-item .portfolio-caption p {
+           margin: 0;
+           font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+           font-size: 16px;
+           font-style: italic;
+       }
+       
+       #portfolio * {
+           z-index: 2;
+       }
+       
+       @media(min-width:767px) {
+           #portfolio .portfolio-item {
+               margin: 0 0 30px;
+           }
+       }
+       
+       .timeline {
+           position: relative;
+           padding: 0;
+           list-style: none;
+       }
+       
+       .timeline:before {
+           content: "";
+           position: absolute;
+           top: 0;
+           bottom: 0;
+           left: 40px;
+           width: 2px;
+           margin-left: -1.5px;
+           background-color: #f1f1f1;
+       }
+       
+       .timeline>li {
+           position: relative;
+           margin-bottom: 50px;
+           min-height: 50px;
+       }
+       
+       .timeline>li:before,
+       .timeline>li:after {
+           content: " ";
+           display: table;
+       }
+       
+       .timeline>li:after {
+           clear: both;
+       }
+       
+       .timeline>li .timeline-panel {
+           float: right;
+           position: relative;
+           width: 100%;
+           padding: 0 20px 0 100px;
+           text-align: left;
+       }
+       
+       .timeline>li .timeline-panel:before {
+           right: auto;
+           left: -15px;
+           border-right-width: 15px;
+           border-left-width: 0;
+       }
+       
+       * {
+        margin: 0;
+        padding: 0;
+      }
+      a {
+        color: #fff;
+        text-decoration: none;
+      }
+      .pg-footer {
+        font-family: 'Roboto', sans-serif;
+      }
+      
+      
+      .footer {
+          background-color: #000000;
+          color: #fff;
+      }
+      .footer-wave-svg {
+          background-color: transparent;
+          display: block;
+          height: 30px;
+          position: relative;
+          top: -1px;
+          width: 100%;
+      }
+      .footer-wave-path {
+          fill: #fffff2;
+      }
+      
+      .footer-content {
+          margin-left: auto;
+          margin-right: auto;
+          max-width: 1230px;
+          padding: 40px 15px 450px;
+          position: relative;
+      }
+      
+      .footer-content-column {
+          box-sizing: border-box;
+          float: left;
+          padding-left: 15px;
+          padding-right: 15px;
+          width: 100%;
+          color: #fff;
+      }
+      
+      .footer-content-column ul li a {
+        color: #fff;
+        text-decoration: none;
+      }
+      
+      .footer-logo-link {
+          display: inline-block;
+      }
+      .footer-menu {
+          margin-top: 30px;
+      }
+      
+      .footer-menu-name {
+          color: #fffff2;
+          font-size: 15px;
+          font-weight: 900;
+          letter-spacing: .1em;
+          line-height: 18px;
+          margin-bottom: 0;
+          margin-top: 0;
+          text-transform: uppercase;
+      }
+      .footer-menu-list {
+          list-style: none;
+          margin-bottom: 0;
+          margin-top: 10px;
+          padding-left: 0;
+      }
+      .footer-menu-list li {
+          margin-top: 5px;
+      }
+      
+      .footer-call-to-action-description {
+          color: #fffff2;
+          margin-top: 10px;
+          margin-bottom: 20px;
+      }
+      .footer-call-to-action-button:hover {
+          background-color: #fffff2;
+          color: #0b0c0c;
+      }
+      .button:last-of-type {
+          margin-right: 0;
+      }
+      .footer-call-to-action-button {
+          background-color: #027b9a;
+          border-radius: 21px;
+          color: #fffff2;
+          display: inline-block;
+          font-size: 11px;
+          font-weight: 900;
+          letter-spacing: .1em;
+          line-height: 18px;
+          padding: 12px 30px;
+          margin: 0 10px 10px 0;
+          text-decoration: none;
+          text-transform: uppercase;
+          transition: background-color .2s;
+          cursor: pointer;
+          position: relative;
+      }
+      .footer-call-to-action {
+          margin-top: 30px;
+      }
+      .footer-call-to-action-title {
+          color: #fffff2;
+          font-size: 14px;
+          font-weight: 900;
+          letter-spacing: .1em;
+          line-height: 18px;
+          margin-bottom: 0;
+          margin-top: 0;
+          text-transform: uppercase;
+      }
+      .footer-call-to-action-link-wrapper {
+          margin-bottom: 0;
+          margin-top: 10px;
+          color: #fff;
+          text-decoration: none;
+      }
+      .footer-call-to-action-link-wrapper a {
+          color: #fff;
+          text-decoration: none;
+      }
+      
+      
+      
+      
+      
+      .footer-social-links {
+          bottom: 0;
+          height: 54px;
+          position: absolute;
+          right: 0;
+          width: 236px;
+      }
+      
+      .footer-social-amoeba-svg {
+          height: 54px;
+          left: 0;
+          display: block;
+          position: absolute;
+          top: 0;
+          width: 236px;
+      }
+      
+      .footer-social-amoeba-path {
+          fill: #027b9a;
+      }
+      
+      .footer-social-link.linkedin {
+          height: 26px;
+          left: 3px;
+          top: 11px;
+          width: 26px;
+      }
+      
+      .footer-social-link {
+          display: block;
+          padding: 10px;
+          position: absolute;
+      }
+      
+      .hidden-link-text {
+          position: absolute;
+          clip: rect(1px 1px 1px 1px);
+          clip: rect(1px,1px,1px,1px);
+          -webkit-clip-path: inset(0px 0px 99.9% 99.9%);
+          clip-path: inset(0px 0px 99.9% 99.9%);
+          overflow: hidden;
+          height: 1px;
+          width: 1px;
+          padding: 0;
+          border: 0;
+          top: 50%;
+      }
+      
+      .footer-social-icon-svg {
+          display: block;
+      }
+      
+      .footer-social-icon-path {
+          fill: #fffff2;
+          transition: fill .2s;
+      }
+      
+      .footer-social-link.twitter {
+          height: 28px;
+          left: 62px;
+          top: 3px;
+          width: 28px;
+      }
+      
+      .footer-social-link.youtube {
+          height: 24px;
+          left: 123px;
+          top: 12px;
+          width: 24px;
+      }
+      
+      .footer-social-link.github {
+          height: 34px;
+          left: 172px;
+          top: 7px;
+          width: 34px;
+      }
+      
+      .footer-copyright {
+          background-color: #027b9a;
+          color: #fff;
+          padding: 15px 30px;
+        text-align: center;
+      }
+      
+      .footer-copyright-wrapper {
+          margin-left: auto;
+          margin-right: auto;
+          max-width: 1200px;
+      }
+      
+      .footer-copyright-text {
+        color: #fff;
+          font-size: 13px;
+          font-weight: 400;
+          line-height: 18px;
+          margin-bottom: 0;
+          margin-top: 0;
+      }
+      
+      .footer-copyright-link {
+          color: #fff;
+          text-decoration: none;
+      }
+      
+      
+      
+      
+      
+      
+      
+      /* Media Query For different screens */
+      @media (min-width:320px) and (max-width:479px)  { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+        .footer-content {
+          margin-left: auto;
+          margin-right: auto;
+          max-width: 1230px;
+          padding: 40px 15px 1050px;
+          position: relative;
+        }
+      }
+      @media (min-width:480px) and (max-width:599px)  { /* smartphones, Android phones, landscape iPhone */
+        .footer-content {
+          margin-left: auto;
+          margin-right: auto;
+          max-width: 1230px;
+          padding: 40px 15px 1050px;
+          position: relative;
+        }
+      }
+      @media (min-width:600px) and (max-width: 800px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */
+        .footer-content {
+          margin-left: auto;
+          margin-right: auto;
+          max-width: 1230px;
+          padding: 40px 15px 1050px;
+          position: relative;
+        }
+      }
+      @media (min-width:801px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */
+      
+      }
+      @media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */
+      
+      }
+      @media (min-width:1281px) { /* hi-res laptops and desktops */
+      
+      }
+      
+      
+      
+      
+      @media (min-width: 760px) {
+        .footer-content {
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 1230px;
+            padding: 40px 15px 450px;
+            position: relative;
+        }
+      
+        .footer-wave-svg {
+            height: 50px;
+        }
+      
+        .footer-content-column {
+            width: 24.99%;
+        }
+      }
+      @media (min-width: 568px) {
+        /* .footer-content-column {
+            width: 49.99%;
+        } */
+      }
+      
+
+       .timeline>li .timeline-panel:after {
+           right: auto;
+           left: -14px;
+           border-right-width: 14px;
+           border-left-width: 0;
+       }
+       
+       .timeline>li .timeline-image {
+           z-index: 100;
+           position: absolute;
+           left: 0;
+           width: 80px;
+           height: 80px;
+           margin-left: 0;
+           border: 7px solid #f1f1f1;
+           border-radius: 100%;
+           text-align: center;
+           color: #fff;
+           background-color: #1ee2e7;
+       }
+       
+       .timeline>li .timeline-image h4 {
+           margin-top: 12px;
+           font-size: 10px;
+           line-height: 14px;
+       }
+       
+       .timeline>li.timeline-inverted>.timeline-panel {
+           float: right;
+           padding: 0 20px 0 100px;
+           text-align: left;
+       }
+       
+       .timeline>li.timeline-inverted>.timeline-panel:before {
+           right: auto;
+           left: -15px;
+           border-right-width: 15px;
+           border-left-width: 0;
+       }
+       
+       .timeline>li.timeline-inverted>.timeline-panel:after {
+           right: auto;
+           left: -14px;
+           border-right-width: 14px;
+           border-left-width: 0;
+       }
+       
+       .timeline>li:last-child {
+           margin-bottom: 0;
+       }
+       
+       .timeline .timeline-heading h4 {
+           margin-top: 0;
+           color: inherit;
+       }
+       
+       .timeline .timeline-heading h4.subheading {
+           text-transform: none;
+       }
+       
+       .timeline .timeline-body>p,
+       .timeline .timeline-body>ul {
+           margin-bottom: 0;
+       }
+       
+       @media(min-width:768px) {
+           .timeline:before {
+               left: 50%;
+           }
+       
+           .timeline>li {
+               margin-bottom: 100px;
+               min-height: 100px;
+           }
+       
+           .timeline>li .timeline-panel {
+               float: left;
+               width: 41%;
+               padding: 0 20px 20px 30px;
+               text-align: right;
+           }
+       
+           .timeline>li .timeline-image {
+               left: 50%;
+               width: 100px;
+               height: 100px;
+               margin-left: -50px;
+           }
+       
+           .timeline>li .timeline-image h4 {
+               margin-top: 16px;
+               font-size: 13px;
+               line-height: 18px;
+           }
+       
+           .timeline>li.timeline-inverted>.timeline-panel {
+               float: right;
+               padding: 0 30px 20px 20px;
+               text-align: left;
+           }
+       }
+       
+       @media(min-width:992px) {
+           .timeline>li {
+               min-height: 150px;
+           }
+       
+           .timeline>li .timeline-panel {
+               padding: 0 20px 20px;
+           }
+       
+           .timeline>li .timeline-image {
+               width: 150px;
+               height: 150px;
+               margin-left: -75px;
+           }
+       
+           .timeline>li .timeline-image h4 {
+               margin-top: 30px;
+               font-size: 18px;
+               line-height: 26px;
+           }
+       
+           .timeline>li.timeline-inverted>.timeline-panel {
+               padding: 0 20px 20px;
+           }
+       }
+       
+       @media(min-width:1200px) {
+           .timeline>li {
+               min-height: 170px;
+           }
+       
+           .timeline>li .timeline-panel {
+               padding: 0 20px 20px 100px;
+           }
+       
+           .timeline>li .timeline-image {
+               width: 170px;
+               height: 170px;
+               margin-left: -85px;
+           }
+       
+           .timeline>li .timeline-image h4 {
+               margin-top: 40px;
+           }
+       
+           .timeline>li.timeline-inverted>.timeline-panel {
+               padding: 0 100px 20px 20px;
+           }
+       }
+       
+       .team-member {
+           margin-bottom: 50px;
+           text-align: center;
+       }
+       
+       .team-member img {
+           margin: 0 auto;
+           border: 7px solid #fff;
+       }
+       
+       .team-member h4 {
+           margin-top: 25px;
+           margin-bottom: 0;
+           text-transform: none;
+       }
+       
+       .team-member p {
+           margin-top: 0;
+       }
+       
+       
+       section#contact {
+           background-color: #222;
+           background-image: url(https://unsplash.imgix.net/44/C3EWdWzT8imxs0fKeKoC_blackforrest.JPG?q=75&fm=jpg&auto=format&s=986aaa92169d4e97975fa66ebd60bafd);
+           background-position: center;
+           background-repeat: no-repeat;
+       }
+       
+       section#contact .section-heading {
+           color: #fff;
+       }
+       
+       section#contact .form-group {
+           margin-bottom: 25px;
+       }
+       
+       section#contact .form-group input,
+       section#contact .form-group textarea {
+           padding: 20px;
+       }
+       
+       section#contact .form-group input.form-control {
+           height: auto;
+       }
+       
+       section#contact .form-group textarea.form-control {
+           height: 236px;
+       }
+       
+       section#contact .form-control:focus {
+           border-color: #1ee2e7;
+           box-shadow: none;
+       }
+       
+       section#contact::-webkit-input-placeholder {
+           text-transform: uppercase;
+           font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+           font-weight: 700;
+           color: #bbb;
+       }
+       
+       section#contact:-moz-placeholder {
+           text-transform: uppercase;
+           font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+           font-weight: 700;
+           color: #bbb;
+       }
+       
+       section#contact::-moz-placeholder {
+           text-transform: uppercase;
+           font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+           font-weight: 700;
+           color: #bbb;
+       }
+       
+       section#contact:-ms-input-placeholder {
+           text-transform: uppercase;
+           font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+           font-weight: 700;
+           color: #bbb;
+       }
+       
+       section#contact .text-danger {
+           color: #e74c3c;
+       }
+       
+       footer {
+           padding: 25px 0;
+           text-align: center;
+       }
+       
+       footer span.copyright {
+           text-transform: uppercase;
+           text-transform: none;
+           font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+           line-height: 40px;
+       }
+       
+       footer ul.quicklinks {
+           margin-bottom: 0;
+           text-transform: uppercase;
+           text-transform: none;
+           font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+           line-height: 40px;
+       }
+       
+       ul.social-buttons {
+           margin-bottom: 0;
+       }
+       
+       ul.social-buttons li a {
+           display: block;
+           width: 40px;
+           height: 40px;
+           border-radius: 100%;
+           font-size: 20px;
+           line-height: 40px;
+           outline: 0;
+           color: #fff;
+           background-color: #222;
+           -webkit-transition: all .3s;
+           -moz-transition: all .3s;
+           transition: all .3s;
+       }
+       
+       ul.social-buttons li a:hover,
+       ul.social-buttons li a:focus,
+       ul.social-buttons li a:active {
+           background-color: #1ee2e7;
+       }
+       
+       .btn:focus,
+       .btn:active,
+       .btn.active,
+       .btn:active:focus {
+           outline: 0;
+       }
+       
+       .portfolio-modal .modal-content {
+           padding: 100px 0;
+           min-height: 100%;
+           border: 0;
+           border-radius: 0;
+           text-align: center;
+           background-clip: border-box;
+           -webkit-box-shadow: none;
+           box-shadow: none;
+       }
+       
+       .portfolio-modal .modal-content h2 {
+           margin-bottom: 15px;
+           font-size: 3em;
+       }
+       
+       .portfolio-modal .modal-content p {
+           margin-bottom: 30px;
+       }
+       
+       .portfolio-modal .modal-content p.item-intro {
+           margin: 20px 0 30px;
+           font-family: "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif;
+           font-size: 16px;
+           font-style: italic;
+       }
+       
+       .portfolio-modal .modal-content ul.list-inline {
+           margin-top: 0;
+           margin-bottom: 30px;
+       }
+       
+       .portfolio-modal .modal-content img {
+           margin-bottom: 30px;
+       }
+       
+       .portfolio-modal .close-modal {
+           position: absolute;
+           top: 25px;
+           right: 25px;
+           width: 75px;
+           height: 75px;
+           background-color: transparent;
+           cursor: pointer;
+       }
+       
+       .portfolio-modal .close-modal:hover {
+           opacity: .3;
+       }
+       
+       .portfolio-modal .close-modal .lr {
+           z-index: 1051;
+           width: 1px;
+           height: 75px;
+           margin-left: 35px;
+           background-color: #222;
+           -webkit-transform: rotate(45deg);
+           -ms-transform: rotate(45deg);
+           transform: rotate(45deg);
+       }
+       
+       .portfolio-modal .close-modal .lr .rl {
+           z-index: 1052;
+           width: 1px;
+           height: 75px;
+           background-color: #222;
+           -webkit-transform: rotate(90deg);
+           -ms-transform: rotate(90deg);
+           transform: rotate(90deg);
+       }
+       
+       ::-moz-selection {
+           text-shadow: none;
+           background: #1ee2e7;
+       }
+       
+       ::selection {
+           text-shadow: none;
+           background: #1ee2e7;
+       }
+       
+       img::selection {
+           background: 0 0;
+       }
+       
+       img::-moz-selection {
+           background: 0 0;
+       }
+       
+       body {
+           webkit-tap-highlight-color: #1ee2e7;
+       }</style>
+
+    <body id="page-top" class="index" data-pinterest-extension-installed="cr1.3.4">
+
+        <!-- Navigation -->
+        <nav class="navbar navbar-default navbar-fixed-top navbar-shrink">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header page-scroll">
+                    
+                    <a class="navbar-brand page-scroll" href="#page-top">Muhammad Fikriansyah</a>
+                </div>
+    
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="hidden active">
+                            <a href="#page-top"></a>
+                        </li>
+                        <li class="">
+                            <a class="page-scroll" href="#services">Services</a>
+                        </li>
+                        <li class="">
+                            <a class="page-scroll" href="#portfolio">Portfolio</a>
+                        </li>
+                        <li class="">
+                            <a class="page-scroll" href="#about">About</a>
+                        </li>
+                        <li class="">
+                            <a class="page-scroll" href="#team">Team</a>
+                        </li>
+                        <li class="">
+                            <a class="page-scroll" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+    
+        <!-- Header -->
+        <header>
+            <div class="container">
+                <div class="intro-text">
+                    <div class="intro-lead-in">Hello Im Muhammad Fikriansyah</div>
+                   
+                    <a href="#services" class="page-scroll btn btn-xl">SERVICES</a>
+                </div>
+            </div>
+        </header>
+    
+        <!-- Services Section -->
+        <section id="services">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading">Services</h2>
+                        <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                            <i class="glyphicon glyphicon-tree-conifer"></i>
+                        </span>
+                        <h4 class="service-heading">Here is a pokok</h4>
+                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                            <i class="glyphicon glyphicon-heart"></i>
+                        </span>
+                        <h4 class="service-heading">Here's a heart</h4>
+                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    </div>
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                            <i class="glyphicon glyphicon-tint"></i>
+                        </span>
+                        <h4 class="service-heading">Waterfall maybe?</h4>
+                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Portfolio Grid Section -->
+        <section id="portfolio" class="bg-light-gray">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading">Portfolio</h2>
+                        <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 portfolio-item">
+                        <a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                    <i class="fa fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img src="https://unsplash.imgix.net/uploads%2F1411419068566071cef10%2F7562527b?q=75&w=1080&h=1080&fit=max&fm=jpg&auto=format&s=240c45655f09c546232a6f106688e502" class="img-responsive" alt="">
+                        </a>
+                        <div class="portfolio-caption">
+                            <h4>Round Icons</h4>
+                            <p class="text-muted">Graphic Design</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 portfolio-item">
+                        <a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                    <i class="fa fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img src="https://unsplash.imgix.net/44/9s1lvXLlSbCX5l3ZaYWP_hdr-1.jpg?q=75&w=1080&h=1080&fit=max&fm=jpg&auto=format&s=f0a1db79752dbb04ec6d2aab7d17c7b0" class="img-responsive" alt="">
+                        </a>
+                        <div class="portfolio-caption">
+                            <h4>Startup Framework</h4>
+                            <p class="text-muted">Website Design</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 portfolio-item">
+                        <a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                    <i class="fa fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img src="https://unsplash.imgix.net/46/Ov6ZY1zLTWmhPC0wFysP_IMG_2896_edt.jpg?q=75&w=1080&h=1080&fit=max&fm=jpg&auto=format&s=6518e4df89659818f6c0392175a9c5e6" class="img-responsive" alt="">
+                        </a>
+                        <div class="portfolio-caption">
+                            <h4>Treehouse</h4>
+                            <p class="text-muted">Website Design</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 portfolio-item">
+                        <a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                    <i class="fa fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img src="https://unsplash.imgix.net/44/9s1lvXLlSbCX5l3ZaYWP_hdr-1.jpg?q=75&w=1080&h=1080&fit=max&fm=jpg&auto=format&s=f0a1db79752dbb04ec6d2aab7d17c7b0" class="img-responsive" alt="">
+                        </a>
+                        <div class="portfolio-caption">
+                            <h4>Golden</h4>
+                            <p class="text-muted">Website Design</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 portfolio-item">
+                        <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                    <i class="fa fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img src="https://unsplash.imgix.net/46/Ov6ZY1zLTWmhPC0wFysP_IMG_2896_edt.jpg?q=75&w=1080&h=1080&fit=max&fm=jpg&auto=format&s=6518e4df89659818f6c0392175a9c5e6" class="img-responsive" alt="">
+                        </a>
+                        <div class="portfolio-caption">
+                            <h4>Escape</h4>
+                            <p class="text-muted">Website Design</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 portfolio-item">
+                        <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-content">
+                                    <i class="fa fa-plus fa-3x"></i>
+                                </div>
+                            </div>
+                            <img src="https://unsplash.imgix.net/uploads%2F1411419068566071cef10%2F7562527b?q=75&w=1080&h=1080&fit=max&fm=jpg&auto=format&s=240c45655f09c546232a6f106688e502" class="img-responsive" alt="">
+                        </a>
+                        <div class="portfolio-caption">
+                            <h4>Dreams</h4>
+                            <p class="text-muted">Website Design</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- About Section -->
+        <section id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading">About</h2>
+                        <h3 class="section-subheading text-muted">Ajmal, I need help to learn how to tweak this part. I don't want this timeline crap.</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <ul class="timeline">
+                            <li>
+                                <div class="timeline-image">
+                                    <img class="img-circle img-responsive" src="img/about/1.jpg" alt="">
+                                </div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4></h4>
+                                        <h4 class="subheading"></h4>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="timeline-inverted">
+                                <div class="timeline-image">
+                                    <img class="img-circle img-responsive" src="img/about/2.jpg" alt="">
+                                </div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4></h4>
+                                        <h4 class="subheading"></h4>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="timeline-image">
+                                    <img class="img-circle img-responsive" src="img/about/3.jpg" alt="">
+                                </div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4></h4>
+                                        <h4 class="subheading"></h4>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="timeline-inverted">
+                                <div class="timeline-image">
+                                    <img class="img-circle img-responsive" src="img/about/4.jpg" alt="">
+                                </div>
+                                <div class="timeline-panel">
+                                    <div class="timeline-heading">
+                                        <h4></h4>
+                                        <h4 class="subheading">Phase Two Expansion</h4>
+                                    </div>
+                                    <div class="timeline-body">
+                                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="timeline-inverted">
+                                <div class="timeline-image">
+                                    <h4>Be Part
+                                        <br>Of Our
+                                        <br>Story!</h4>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Team Section -->
+        <section id="team" class="bg-light-gray">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading">Our Amazing Team</h2>
+                        <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="team-member">
+                            <img src="http://www.mycatspace.com/wp-content/uploads/2013/08/adopting-a-cat.jpg" class="img-responsive img-circle" alt="">
+                            <h4></h4>
+                            <p class="text-muted">Lead Designer</p>
+                            
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="team-member">
+                            <img src="http://www.mycatspace.com/wp-content/uploads/2013/08/adopting-a-cat.jpg" class="img-responsive img-circle" alt="">
+                            <h4></h4>
+                            <p class="text-muted">Lead Marketer</p>
+                            
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="team-member">
+                            <img src="http://www.mycatspace.com/wp-content/uploads/2013/08/adopting-a-cat.jpg" class="img-responsive img-circle" alt="">
+                            <h4></h4>
+                            <p class="text-muted">Lead Developer</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2 text-center">
+                  </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Clients Aside -->
+       
+    
+        <section id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 text-center">
+                        <h2 class="section-heading">Contact Us</h2>
+                        <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <form name="sentMessage" id="contactForm" novalidate="">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Your Name *" id="name" required="" data-validation-required-message="Please enter your name.">
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" placeholder="Your Email *" id="email" required="" data-validation-required-message="Please enter your email address.">
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                    <div class="form-group">
+                                        <input type="tel" class="form-control" placeholder="Your Phone *" id="phone" required="" data-validation-required-message="Please enter your phone number.">
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <textarea class="form-control" placeholder="Your Message *" id="message" required="" data-validation-required-message="Please enter a message."></textarea>
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="col-lg-12 text-center">
+                                    <div id="success"></div>
+                                    <button type="submit" class="btn btn-xl">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+
+        <div class="pg-footer">
+            <footer class="footer">
+             
+              <div class="footer-content">
+                <div class="footer-content-column">
+                  <div class="footer-logo">
+                    <a class="footer-logo-link" href="#">
+                      <span class="hidden-link-text">LOGO</span>
+                      <h1>LOGO</h1>
+                    </a>
+                  </div>
+                  <div class="footer-menu">
+                    <h2 class="footer-menu-name"> </h2>
+                    <ul id="menu-get-started" class="footer-menu-list">
+                      <li class="menu-item menu-item-type-post_type menu-item-object-product">
+                        <a href="#"></a>
+                      </li>
+                      <li class="menu-item menu-item-type-post_type menu-item-object-product">
+                        <a href="#"></a>
+                      </li>
+                      <li class="menu-item menu-item-type-post_type menu-item-object-product">
+                        <a href="#"></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="footer-content-column">
+                  <div class="footer-menu">
+                    <h2 class="footer-menu-name"> Company</h2>
+                    <ul id="menu-company" class="footer-menu-list">
+                      <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                        <a href="#">Contact</a>
+                      </li>
+                      <li class="menu-item menu-item-type-taxonomy menu-item-object-category">
+                        <a href="#">News</a>
+                      </li>
+                      <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                        <a href="#">Careers</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="footer-menu">
+                    <h2 class="footer-menu-name"> Legal</h2>
+                    <ul id="menu-legal" class="footer-menu-list">
+                      <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-170434">
+                        <a href="#">Privacy Notice</a>
+                      </li>
+                      <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                        <a href="#">Terms of Use</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="footer-content-column">
+                  <div class="footer-menu">
+                    <h2 class="footer-menu-name"> Quick Links</h2>
+                    <ul id="menu-quick-links" class="footer-menu-list">
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom">
+                        <a target="_blank" rel="noopener noreferrer" href="#">Support Center</a>
+                      </li>
+                      <li class="menu-item menu-item-type-custom menu-item-object-custom">
+                        <a target="_blank" rel="noopener noreferrer" href="#">Service Status</a>
+                      </li>
+                      <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                        <a href="#">Security</a>
+                      </li>
+                      <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                        <a href="#">Blog</a>
+                      </li>
+                      <li class="menu-item menu-item-type-post_type_archive menu-item-object-customer">
+                        <a href="#">Customers</a></li>
+                      <li class="menu-item menu-item-type-post_type menu-item-object-page">
+                        <a href="#">Reviews</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="footer-content-column">
+                  <div class="footer-call-to-action">
+                    <h2 class="footer-call-to-action-title"> Let's Chat</h2>
+                    <p class="footer-call-to-action-description"> Have a support question?</p>
+                    <a class="footer-call-to-action-button button" href="#" target="_self"> Get in Touch </a>
+                  </div>
+                  <div class="footer-call-to-action">
+                    <h2 class="footer-call-to-action-title"> You Call Us</h2>
+                    <p class="footer-call-to-action-link-wrapper"> <a class="footer-call-to-action-link" href="telp+62XXXX" target="_self"> +62 XXXXX </a></p>
+                  </div>
+                </div>
+                <div class="footer-social-links"> <svg class="footer-social-amoeba-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 236 54">
+                    <path class="footer-social-amoeba-path" d="M223.06,43.32c-.77-7.2,1.87-28.47-20-32.53C187.78,8,180.41,18,178.32,20.7s-5.63,10.1-4.07,16.7-.13,15.23-4.06,15.91-8.75-2.9-6.89-7S167.41,36,167.15,33a18.93,18.93,0,0,0-2.64-8.53c-3.44-5.5-8-11.19-19.12-11.19a21.64,21.64,0,0,0-18.31,9.18c-2.08,2.7-5.66,9.6-4.07,16.69s.64,14.32-6.11,13.9S108.35,46.5,112,36.54s-1.89-21.24-4-23.94S96.34,0,85.23,0,57.46,8.84,56.49,24.56s6.92,20.79,7,24.59c.07,2.75-6.43,4.16-12.92,2.38s-4-10.75-3.46-12.38c1.85-6.6-2-14-4.08-16.69a21.62,21.62,0,0,0-18.3-9.18C13.62,13.28,9.06,19,5.62,24.47A18.81,18.81,0,0,0,3,33a21.85,21.85,0,0,0,1.58,9.08,16.58,16.58,0,0,1,1.06,5A6.75,6.75,0,0,1,0,54H236C235.47,54,223.83,50.52,223.06,43.32Z"></path>
+                  </svg>
+                  <a class="footer-social-link linkedin" href="#" target="_blank">
+                    <span class="hidden-link-text">Linkedin</span>
+                    <svg class="footer-social-icon-svg" xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 30 30">
+                      <path class="footer-social-icon-path" d="M9,25H4V10h5V25z M6.501,8C5.118,8,4,6.879,4,5.499S5.12,3,6.501,3C7.879,3,9,4.121,9,5.499C9,6.879,7.879,8,6.501,8z M27,25h-4.807v-7.3c0-1.741-0.033-3.98-2.499-3.98c-2.503,0-2.888,1.896-2.888,3.854V25H12V9.989h4.614v2.051h0.065 c0.642-1.18,2.211-2.424,4.551-2.424c4.87,0,5.77,3.109,5.77,7.151C27,16.767,27,25,27,25z"></path>
+                    </svg>
+                  </a>
+                  <a class="footer-social-link twitter" href="#" target="_blank">
+                    <span class="hidden-link-text">Twitter</span>
+                    <svg class="footer-social-icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 26 26">
+                      <path class="footer-social-icon-path" d="M 25.855469 5.574219 C 24.914063 5.992188 23.902344 6.273438 22.839844 6.402344 C 23.921875 5.75 24.757813 4.722656 25.148438 3.496094 C 24.132813 4.097656 23.007813 4.535156 21.8125 4.769531 C 20.855469 3.75 19.492188 3.113281 17.980469 3.113281 C 15.082031 3.113281 12.730469 5.464844 12.730469 8.363281 C 12.730469 8.773438 12.777344 9.175781 12.867188 9.558594 C 8.503906 9.339844 4.636719 7.246094 2.046875 4.070313 C 1.59375 4.847656 1.335938 5.75 1.335938 6.714844 C 1.335938 8.535156 2.261719 10.140625 3.671875 11.082031 C 2.808594 11.054688 2 10.820313 1.292969 10.425781 C 1.292969 10.449219 1.292969 10.46875 1.292969 10.492188 C 1.292969 13.035156 3.101563 15.15625 5.503906 15.640625 C 5.0625 15.761719 4.601563 15.824219 4.121094 15.824219 C 3.78125 15.824219 3.453125 15.792969 3.132813 15.730469 C 3.800781 17.8125 5.738281 19.335938 8.035156 19.375 C 6.242188 20.785156 3.976563 21.621094 1.515625 21.621094 C 1.089844 21.621094 0.675781 21.597656 0.265625 21.550781 C 2.585938 23.039063 5.347656 23.90625 8.3125 23.90625 C 17.96875 23.90625 23.25 15.90625 23.25 8.972656 C 23.25 8.742188 23.246094 8.515625 23.234375 8.289063 C 24.261719 7.554688 25.152344 6.628906 25.855469 5.574219 "></path>
+                    </svg>
+                  </a>
+                  <a class="footer-social-link youtube" href="#" target="_blank">
+                    <span class="hidden-link-text">Youtube</span>
+                    <svg class="footer-social-icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+                      <path class="footer-social-icon-path" d="M 15 4 C 10.814 4 5.3808594 5.0488281 5.3808594 5.0488281 L 5.3671875 5.0644531 C 3.4606632 5.3693645 2 7.0076245 2 9 L 2 15 L 2 15.001953 L 2 21 L 2 21.001953 A 4 4 0 0 0 5.3769531 24.945312 L 5.3808594 24.951172 C 5.3808594 24.951172 10.814 26.001953 15 26.001953 C 19.186 26.001953 24.619141 24.951172 24.619141 24.951172 L 24.621094 24.949219 A 4 4 0 0 0 28 21.001953 L 28 21 L 28 15.001953 L 28 15 L 28 9 A 4 4 0 0 0 24.623047 5.0546875 L 24.619141 5.0488281 C 24.619141 5.0488281 19.186 4 15 4 z M 12 10.398438 L 20 15 L 12 19.601562 L 12 10.398438 z"></path>
+                    </svg>
+                  </a>
+                  <a class="footer-social-link github" href="#" target="_blank">
+                    <span class="hidden-link-text">Github</span>
+                    <svg class="footer-social-icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                      <path class="footer-social-icon-path" d="M 16 4 C 9.371094 4 4 9.371094 4 16 C 4 21.300781 7.4375 25.800781 12.207031 27.386719 C 12.808594 27.496094 13.027344 27.128906 13.027344 26.808594 C 13.027344 26.523438 13.015625 25.769531 13.011719 24.769531 C 9.671875 25.492188 8.96875 23.160156 8.96875 23.160156 C 8.421875 21.773438 7.636719 21.402344 7.636719 21.402344 C 6.546875 20.660156 7.71875 20.675781 7.71875 20.675781 C 8.921875 20.761719 9.554688 21.910156 9.554688 21.910156 C 10.625 23.746094 12.363281 23.214844 13.046875 22.910156 C 13.15625 22.132813 13.46875 21.605469 13.808594 21.304688 C 11.144531 21.003906 8.34375 19.972656 8.34375 15.375 C 8.34375 14.0625 8.8125 12.992188 9.578125 12.152344 C 9.457031 11.851563 9.042969 10.628906 9.695313 8.976563 C 9.695313 8.976563 10.703125 8.65625 12.996094 10.207031 C 13.953125 9.941406 14.980469 9.808594 16 9.804688 C 17.019531 9.808594 18.046875 9.941406 19.003906 10.207031 C 21.296875 8.65625 22.300781 8.976563 22.300781 8.976563 C 22.957031 10.628906 22.546875 11.851563 22.421875 12.152344 C 23.191406 12.992188 23.652344 14.0625 23.652344 15.375 C 23.652344 19.984375 20.847656 20.996094 18.175781 21.296875 C 18.605469 21.664063 18.988281 22.398438 18.988281 23.515625 C 18.988281 25.121094 18.976563 26.414063 18.976563 26.808594 C 18.976563 27.128906 19.191406 27.503906 19.800781 27.386719 C 24.566406 25.796875 28 21.300781 28 16 C 28 9.371094 22.628906 4 16 4 Z "></path>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="footer-copyright">
+                <div class="footer-copyright-wrapper">
+                  <p class="footer-copyright-text">
+                    <a class="footer-copyright-link" href="" target="_self"> ©2024. | Designed By: Fikri. | All rights reserved. </a>
+                  </p>
+                </div>
+              </div>
+            </footer>
+          </div>
+        </div>
+    </div>
+    
+
+    
+
+        
+    
+</body>
+<script src="https://raw.githubusercontent.com/IronSummitMedia/startbootstrap/gh-pages/templates/agency/js/jquery-1.11.0.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+
+<script>$(function() {
+    $('a.page-scroll').bind('click', function(event) {
+        var $anchor = $(this);
+        $('html, body').stop().animate({
+            scrollTop: $($anchor.attr('href')).offset().top
+        }, 1500, 'easeInOutExpo');
+        event.preventDefault();
+    });
+});
+
+// Highlight the top nav as scrolling occurs
+$('body').scrollspy({
+    target: '.navbar-fixed-top'
+})
+
+// Closes the Responsive Menu on Menu Item Click
+$('.navbar-collapse ul li a').click(function() {
+    $('.navbar-toggle:visible').click();
+});</script>
+<script src="https://raw.githubusercontent.com/IronSummitMedia/startbootstrap/gh-pages/templates/agency/js/jquery-1.11.0.js"></script>
+    
+
+ <!-- jQuery Version 1.11.0 -->
+ <script src="https://raw.githubusercontent.com/IronSummitMedia/startbootstrap/gh-pages/templates/agency/js/jquery-1.11.0.js"></script>
+    
+ <!-- Bootstrap Core JavaScript -->
+ <script src="https://raw.githubusercontent.com/IronSummitMedia/startbootstrap/gh-pages/templates/agency/js/bootstrap.min.js"></script>
+
+ <!-- Plugin JavaScript -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+ <script src="https://raw.githubusercontent.com/IronSummitMedia/startbootstrap/gh-pages/templates/agency/js/classie.js"></script>
+ <script src="https://raw.githubusercontent.com/IronSummitMedia/startbootstrap/gh-pages/templates/agency/js/cbpAnimatedHeader.js"></script>
+
+ <!-- Contact Form JavaScript -->
+ <script src="https://raw.githubusercontent.com/IronSummitMedia/startbootstrap/gh-pages/templates/agency/js/jqBootstrapValidation.js"></script>
+ <script src="https://raw.githubusercontent.com/IronSummitMedia/startbootstrap/gh-pages/templates/agency/js/contact_me.js"></script>
+
+</html>
